@@ -25,7 +25,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-custom align-items-center">
         <a class="navbar-brand" href="#">
-            <img src="images/bk.gif" class="navbar-image navbar-brand">InkScribe</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>InkScribe</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +51,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#"
                 ><i class="fas fa-heart navbar-icon navbar-icon-heart"></i
-              ></a
+              ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
@@ -62,6 +62,12 @@
               <a class="nav-link" href="#"
                 ><i class="bi bi-person navbar-icon navbar-icon-user"></i
               ></a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary navbar-btn">Login</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary navbar-btn">Signup</button>
             </li>
           </ul>
         </div>
@@ -75,91 +81,77 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active car-item align-content-center ">
-          <img src="images/back_bk.jpg" class="d-block w-100 car-image " alt="...">
+          <img src="images/blue_back.jpg" class="d-block w-100 car-image " alt="...">
           <div class="carousel-caption  w-60 justify-content-start c-dark">
             <h2 class="c-dark">A reader lives a thousand lives before he dies</h2>
             <p class="c-dark"> Escape reality, unravel mysteries, and embark on unforgettable adventures between the pages of a book.</p>
           </div>
         </div>
         <div class="carousel-item car-item ">
-          <img src="images/back_bk.jpg" class="d-block w-100 car-image " alt="...">
+          <img src="images/blue_back.jpg" class="d-block w-100 car-image " alt="...">
           <div class="carousel-caption  w-60 justify-content-start c-dark">
             <h2 class="c-dark">Bookworm's Paradise: Where imagination knows no bounds.</h2>
             <p class="c-dark">Unleash your imagination, dive into captivating stories, and experience the magic of reading. Discover a bookworm's paradise.</p>
           </div>
         </div>
         <div class="carousel-item car-item ">
-          <img src="images/back_bk.jpg" class="d-block w-100 car-image" alt="...">
+          <img src="images/blue_back.jpg" class="d-block w-100 car-image" alt="...">
           <div class="carousel-caption w-60 justify-content-start c-dark">
             <h2 class="c-dark">Literary Delight: Let the words be your sweet escape.</h2>
             <p class="c-dark cl">Discover the magic of literature, where words ignite your imagination and transport you to extraordinary realms of adventure and emotion.</p>
           </div>
         </div>
       </div>
-     
       </div>
     </div>
-    <div class="cat-item"><h5>Science & Fiction</h5> <a href="#">View all</a></div>
-    <hr>
+    <div class="cat-item"><h6 class="m-0">Science & Fiction</h6> <a href="#">View all</a></div>
+
+
+
+
+
     <div class="row no-gutters">
-      <div class="col-md-3 mx-md-auto m-2">
-        <div class="card shadow">
-          <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
-          <div class="card-body">
-            <h5 class="card-title">Book 1</h5>
-            <p class="card-text">Price: $10</p>
-            <a href="#">View details</a>
-            <a href="#" class="btn btn-outline-success  btn-sm">Add to Cart</a>
-             <a class="nav-link" href="#"
-                ><i class="fas fa-heart navbar-icon navbar-icon-heart"></i
-              ></a>
-          </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
+        <div class="d-flex justify-content-between">
+          <p class="m-0 d-inline-block">Price: $10</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
         </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
       </div>
-      <div class="col-md-3 mx-md-auto m-2">
-        <div class="card shadow">
-          <img src="images/book2.webp" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-            <h5 class="card-title">Book 2</h5>
-            <p class="card-text">Price: $15</p>
-            <a href="#" >View details</a>
-            <a href="#" class="btn btn-outline-success  btn-sm">Add to Cart</a>
-             <a class="nav-link" href="#"
-                ><i class="fas fa-heart navbar-icon navbar-icon-heart"></i
-              ></a>
-          </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
+        <div class="d-flex justify-content-between">
+          <p class="m-0 d-inline-block">Price: $10</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
         </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
       </div>
-      <div class="col-md-3 mx-md-auto m-2">
-        <div class="card shadow">
-          <img src="images/book3.jpg" class="card-img-top" alt="Book 3">
-          <div class="card-body">
-            <h5 class="card-title">Book 3</h5>
-            <p class="card-text">Price: $20</p>
-            <a href="#" >View details</a>
-            <a href="#" class="btn btn-outline-success  btn-sm">Add to Cart</a>
-             <a class="nav-link" href="#"
-                ><i class="fas fa-heart navbar-icon navbar-icon-heart"></i
-              ></a>
-          </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
+        <div class="d-flex justify-content-between">
+          <p class="m-0 d-inline-block">Price: $10</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
         </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
       </div>
-      <div class="col-md-3 mx-md-auto m-2">
-        <div class="card shadow">
-          <img src="images/book4.jpg" class="card-img-top" alt="Book 1">
-          <div class="card-body">
-            <h5 class="card-title">Book 1</h5>
-            <p class="card-text">Price: $10</p>
-            <div class="d-flex justify-content-around card-cta">
-              <a href="#">View details</a>
-              <a href="#" class="btn btn-outline-success btn-sm">Add to Cart</a>
-              <a class="nav-link" href="#"
-                ><i class="fas fa-heart navbar-icon navbar-icon-heart"></i
-              ></a>
-            </div>
-          </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
+        <div class="d-flex justify-content-between">
+          <p class="m-0 d-inline-block">Price: $10</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
         </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
       </div>
+      
     </div>
   </body>
 </html>

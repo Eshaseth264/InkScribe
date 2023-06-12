@@ -4,21 +4,21 @@ body {
   box-sizing: border-box;
 }
 .navbar-custom {
-  background-color: #3d2b1f;
+  background-color: #004C6D;
   height: 7vh;
 }
 .navbar-custom .navbar-brand {
-  color: #f7f4f2;
+  color:  #C4E1EE;
 }
 .navbar-custom .navbar-nav .nav-link {
-  color: #f7f4f2;
+  color:  #C4E1EE;
 }
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: #f7f4f2;
+  color:  #C4E1EE;
 }
 
 .navbar-icon {
-  color: #efe1d6;
+  color:  #6FB8E1;
   font-size: 1rem; /* Adjust the font size as needed */
 }
 
@@ -31,17 +31,17 @@ body {
 .navbar-icon-heart:hover,
 .navbar-icon-cart:hover,
 .navbar-icon-user:hover {
-  color: #f7f4f2; /* Creamy white */
+  color:  #C4E1EE; /* Creamy white */
 }
 .navbar-icon-heart:hover {
   font-size: 0.8rem;
-  fill: #f7f4f2;
+  fill:  #C4E1EE;
 }
 .navbar-icon-heart {
   font-size: 0.8rem;
 }
 input.form-control {
-  border: 1px solid #efe1d6;
+  border: 1px solid  #6FB8E1;
   display: block;
   padding: 9px 2px 9px 40px;
   background: transparent
@@ -65,28 +65,29 @@ input.form-control {
 }
 .car-image {
   height: 100%;
+  width: 100%;
 }
 .car-item {
-  height: 80vh;
+  height: 100vh;
 }
 .indicator-item{
   padding: 2px;
   border: 0px;
 }
 .c-dark{
-  color:#3d2b1f;
+  color:#004C6D;
 }
 .c-light{
-  color:#edd0ba;
+  color: #6FB8E1;
 }
 .c-ultraLight{
-  color: #f7f4f2;
+  color:  #C4E1EE;
 }
 .carousel-caption{
   position: absolute;
-  right:50%;
+  right:30%;
   bottom: 30%;
-  left:10%;
+  left:30%;
   z-index: 10;
 }
 .h2{
@@ -94,24 +95,59 @@ input.form-control {
 }
 .card-img-top{
   height: 100%;
+  width: 100%;
+  margin: 10px;
 
 
 }
 .card{
-  height: 50vh;
+  height: fit-content;
   border: 1px gray solid;
-  box-shadow: #3d2b1f;
+  box-shadow: #004C6D;
   padding: 10px;
   margin: 10px;
+  background-color: #FFF;
 }
 .cat-item{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
+  margin-top: 10px;
+  font-size: x-small;
 }
 .card-cta{
  flex-direction: row;
  justify-content: space-around;
  
+}
+.navbar-btn {
+  height: 23px;
+  width: 80%;
+  font-size: 12px;
+  margin: 10px;
+  padding: 3px;
+  background-color: #6FB8E1;
+  border: none;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-btn:hover {
+  height: 23px;
+  width: 80%;
+  font-size: 12px;
+  margin: 10px;
+  padding: 3px;
+  background-color: #C4E1EE;
+  border: none;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  background-color: #C4E1EE;
+  margin:1rem;
+  border:#004C6D 1px solid;
+
 }
