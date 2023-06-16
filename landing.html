@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>eBook Store</title>
+    <title>BookVerse: Your Digital Library</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -20,12 +20,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/landing.js"></script>
     <link rel="stylesheet" href="css/landing.css" />
+    <link rel="icon" type="image/x-icon" href="images/book.svg">
+
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-custom align-items-center">
+      <nav class="navbar navbar-expand-md navbar-custom align-items-center sticky-top">
         <a class="navbar-brand" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>InkScribe</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>BookVerse</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,10 +66,10 @@
               ></a>
             </li>
             <li class="nav-item">
-                <button class="btn btn-primary navbar-btn">Login</button>
+                <button class="btn btn-primary navbar-btn" data-target="#login_modal" data-toggle="modal">Login</button>
             </li>
             <li class="nav-item">
-                <button class="btn btn-primary navbar-btn">Signup</button>
+                <button class="btn btn-primary navbar-btn" data-target="#signup_modal" data-toggle="modal">Signup</button>
             </li>
           </ul>
         </div>
@@ -104,54 +106,288 @@
       </div>
       </div>
     </div>
-    <div class="cat-item"><h6 class="m-0">Science & Fiction</h6> <a href="#">View all</a></div>
 
 
-
-
-
-    <div class="row no-gutters">
+    <div class="cat-item ml-3 mr-3 mt-3 mb-0"><h6>Science & Fiction</h6></div>
+    <div id="cardContainersf">
+    <div class="row no-gutters border-0">
       <div class="col-md-2 mx-md-auto  col-sm-6 card">
-        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
-        <div class="d-flex justify-content-between">
-          <p class="m-0 d-inline-block">Price: $10</p>
+        <img src="img_sf/book1.jpg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹600</p>
           <a class="nav-link d-inline-block p-0" href="#"
               ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
             ></a>
         </div>
-          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
       </div>
       <div class="col-md-2 mx-md-auto  col-sm-6 card">
-        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
-        <div class="d-flex justify-content-between">
-          <p class="m-0 d-inline-block">Price: $10</p>
+        <img src="img_sf/sf2.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹699</p>
           <a class="nav-link d-inline-block p-0" href="#"
               ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
             ></a>
         </div>
-          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
       </div>
       <div class="col-md-2 mx-md-auto  col-sm-6 card">
-        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
-        <div class="d-flex justify-content-between">
-          <p class="m-0 d-inline-block">Price: $10</p>
+        <img src="img_sf/sf3.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹380</p>
           <a class="nav-link d-inline-block p-0" href="#"
               ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
             ></a>
         </div>
-          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
       </div>
-      <div class="col-md-2 mx-md-auto  col-sm-6 card">
-        <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
-        <div class="d-flex justify-content-between">
-          <p class="m-0 d-inline-block">Price: $10</p>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card ">
+        <img src="img_sf/sf4.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹680</p>
           <a class="nav-link d-inline-block p-0" href="#"
               ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
             ></a>
         </div>
-          <a href="#" class="btn btn-outline-success btn-sm mt-2">Add to Cart</a> 
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
       </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <div class="row bg-white">
+        <img src="img_sf/sf51.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_sf/sf52.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <div class="row bg-white">
+        <img src="img_sf/sf53.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_sf/sf55.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <p class="m-0 d-block small p-2">Explore the fusion of science and fiction in captivating books!</p>
       
+      </div><div class="d-flex justify-content-between pl-2 pr-2">
+        <button class="btn btn-primary navbar-btn align-self-center transparent-bg" id ="viewMoresf" class="small">></button>
+      </div>
     </div>
+  </div>
+    <div class="cat-item ml-3 mr-3 mt-3 mb-0"><h6>Drama</h6></div>
+    <div id="cardContainerdr">
+    <div  class="row no-gutters border-0">
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_dr/dr51.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹450</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_dr/dr1.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹750</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_dr/dr2.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹1000</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card ">
+        <img src="img_dr/dr54.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹350</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <div class="row bg-white">
+        <img src="img_dr/dr52.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_dr/dr53.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <div class="row bg-white">
+        <img src="img_dr/dr3.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_dr/dr4.jpg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <p class="m-0 d-block small p-2">Dive into drama's allure with our captivating collection of books!</p>
+       
+      </div> <div class="d-flex justify-content-between pl-2 pr-2">
+          <button class="btn btn-primary navbar-btn align-self-center transparent-bg" id ="viewMoredr" class="small">></button>
+        </div>
+    </div>
+  </div>
+    <div class="cat-item ml-3 mr-3 mt-3 mb-0"><h6>Classics</h6></div>
+    <div id="cardContainercl">
+    <div class="row no-gutters border-0">
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_cl/cl1.webp" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹699</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_cl/cl2.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹500</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <img src="img_cl/cl3.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹300</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card ">
+        <img src="img_cl/cl4.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+        <div class="d-flex justify-content-between p-2">
+          <p class="m-0 d-inline-block">Price:   ₹699</p>
+          <a class="nav-link d-inline-block p-0" href="#"
+              ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+            ></a>
+        </div>
+          <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+      </div>
+      <div class="col-md-2 mx-md-auto  col-sm-6 card">
+        <div class="row bg-white">
+        <img src="img_cl/cl51.jpg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_cl/cl52.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <div class="row bg-white">
+        <img src="img_cl/cl53.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+        <img src="img_cl/cl54.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+      </div>
+      <p class="m-0 d-block small p-2">Embark on a timeless journey with our exquisite collection of classical books!</p>
+      </div>
+      <div class="d-flex justify-content-between pl-2 pr-2">
+        <button class="btn btn-outline-primary navbar-btn align-self-center transparent-bg" id ="viewMorecl" class="small">></button>
+      </div>
+    </div>
+  </div>
+    <div class="cat-item ml-3 mr-3 mt-3 mb-0"><h6>Fantasy</h6></div>
+    <div id="cardContainerfs">
+    <div class="row no-gutters border-0">
+  <div class="col-md-2 mx-md-auto  col-sm-6 card">
+    <img src="img_fs/fs54.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+    <div class="d-flex justify-content-between p-2">
+      <p class="m-0 d-inline-block">Price:   ₹499</p>
+      <a class="nav-link d-inline-block p-0" href="#"
+          ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+        ></a>
+    </div>
+      <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+  </div>
+  <div class="col-md-2 mx-md-auto  col-sm-6 card">
+    <img src="img_fs/fs2.jpg" class="card-img-top p-2 m-0" alt="Book 1">
+    <div class="d-flex justify-content-between p-2">
+      <p class="m-0 d-inline-block">Price:   ₹699</p>
+      <a class="nav-link d-inline-block p-0" href="#"
+          ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+        ></a>
+    </div>
+      <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+  </div>
+  <div class="col-md-2 mx-md-auto  col-sm-6 card">
+    <img src="img_fs/fs3.jpg" class="card-img-top p-2 m-0" alt="Book 1">
+    <div class="d-flex justify-content-between p-2">
+      <p class="m-0 d-inline-block">Price:   ₹699</p>
+      <a class="nav-link d-inline-block p-0" href="#"
+          ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+        ></a>
+    </div>
+      <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+  </div>
+  <div class="col-md-2 mx-md-auto  col-sm-6 card ">
+    <img src="img_fs/fs4.jpeg" class="card-img-top p-2 m-0" alt="Book 1">
+    <div class="d-flex justify-content-between p-2">
+      <p class="m-0 d-inline-block">Price:   ₹799</p>
+      <a class="nav-link d-inline-block p-0" href="#"
+          ><i class="far fa-heart navbar-icon navbar-icon-heart"></i
+        ></a>
+    </div>
+      <a href="#" class="btn btn-outline-success btn-sm mt-2 m-2">Add to Cart</a> 
+  </div>
+  <div class="col-md-2 mx-md-auto  col-sm-6 card">
+    <div class="row bg-white">
+    <img src="img_fs/fs51.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+    <img src="img_fs/fs1.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+  </div>
+  <div class="row bg-white">
+    <img src="img_fs/fs52.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+    <img src="img_fs/fs53.jpeg" class="card-img-top p-2 m-0 h-25 w-50 col-md-6" alt="Book 1">
+  </div>
+  <p class="m-0 d-block small p-2">Escape to enchanting realms with our captivating fantasy books!</p>
+ 
+  </div> <div class="d-flex justify-content-between pl-2 pr-2">
+    <button class="btn btn-primary navbar-btn align-self-center transparent-bg" id ="viewMorefs" >></button>
+  </div>
+</div>
+</div>
+    <footer class="footer">
+      <div class="cont">
+        <div class="row p-2 border-0">
+          <div class="col-md-4 col-sm-6">
+            <h4>About Us</h4>
+            <p class="text-justify">At BookVerse, we offer a vast selection of digital books to satisfy every reader's appetite. With a diverse range of genres and captivating titles, we provide a gateway to immersive worlds, fascinating stories, and boundless knowledge. Discover the pleasure of reading on-the-go with our extensive collection, curated to inspire, entertain, and ignite your imagination. Join us in embracing the digital age of reading and unlock a world of literary wonders.</p>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Ebooks</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4>Help & Support</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4>Connect with Us</h4>
+            <ul class="list-inline social-icons">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <h4>Subscribe to Our Newsletter</h4>
+            <form>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <p class="text-center m-2 d-block justify-self-center">&copy; 2023 Inkscribe. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
